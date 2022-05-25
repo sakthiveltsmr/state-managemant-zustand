@@ -15,14 +15,15 @@ const Course = () => {
     });
   };
   return (
-    <div className="pb-20">
+    <div className="p-5">
       <input
-        className="w-[50px] border border-gray-500 focus:outline-none"
+        className="w-[150px] px-4 py-1 border rounded-md mr-4 border-gray-500 focus:outline-none"
         type="text"
         value={courseTitle}
         onChange={(e) => setCourseTitle(e.target.value)}
       />
       <button
+        className="bg-green-600 px-4 py-1 text-white rounded-md hover:bg-green-500"
         onClick={() => {
           handleCourseSubmit();
         }}
